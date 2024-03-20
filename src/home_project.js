@@ -8,7 +8,7 @@ export function home_project(){
    let main_div=document.querySelector('.main');
    project_header.textContent='Project';
    main_div.appendChild(project_header);
-   projectsArray.forEach(element=>{
+   projectsArray.projectsArray.forEach(element=>{
       let item=document.createElement('ul');
       item.textContent=element.name;
       let todo_list=document.createElement('ul');

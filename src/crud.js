@@ -1,8 +1,9 @@
 
+import { project_deserialized } from "./storage.js";
+import { stored_data } from "./storage.js";
 
-
-let todosArray=[{name:'xxx',date:0},{name:'yyy',date:0}];
-let projectsArray=[{name:'pro1',todolist:['one','two']}];
+let todosArray=JSON.parse(localStorage.getItem("todo"));
+let projectsArray=JSON.parse(localStorage.getItem("project"));
 
 function addItem(arr,item){
     arr.push(item);
